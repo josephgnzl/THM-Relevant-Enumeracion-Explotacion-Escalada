@@ -18,8 +18,13 @@ Retirar SeImpersonatePrivilege de las cuentas de servicio cuando no sea estricta
 
 ## 5. Ejecución de archivos
 
-## Restringir la ejecución de binarios desde directorios temporales y aplicar controles como AppLocker o WDAC.
+Restringir la ejecución de binarios desde directorios temporales y aplicar controles como AppLocker o WDAC.
 
 ## 6. Monitorización
 
-## Supervisar accesos SMB, modificaciones en directorios web y ejecución anómala de procesos desde IIS.
+ Supervisar accesos SMB, modificaciones en directorios web y ejecución anómala de procesos desde IIS.
+
+
+happy hacking, h4ck the planet! 🥇
+
+Joseph! 
