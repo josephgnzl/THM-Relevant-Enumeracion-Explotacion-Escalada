@@ -94,6 +94,4 @@ Usuario obtenido:
 ```
 IIS APPPOOL\DefaultAppPool
 ```
-
-
-
+Una vez obtenido el acceso, nuestro siguiente objetivo será escalar privilegios dentro del sistema. Para ello, realizaremos una nueva fase de enumeración local en busca de permisos, configuraciones y posibles vectores que nos permitan elevar nuestro nivel de privilegios.
