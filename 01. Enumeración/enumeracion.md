@@ -22,13 +22,13 @@ nmap -p- -sC -sV -vvv 10.129.125.26
 
 | Puerto | Estado | Servicio | Posible función / análisis |
 |---:|:---:|---|---|
-| `80/tcp` | open | HTTP | Servidor Web. |
-| `135/tcp` | open | MSRPC | Servicio RPC de Windows. Permite identificar componentes y servicios asociados al sistema. |
-| `139/tcp` | open | NetBIOS-SSN | Asociado a SMB sobre NetBIOS. Permite enumeración de recursos compartidos. |
-| `445/tcp` | open | Microsoft-DS / SMB | Servicio SMB. Prioridad alta para enumerar shares, usuarios y posibles configuraciones inseguras. |
-| `3389/tcp` | open | RDP | Escritorio remoto de Windows. Puede ser utilizado para acceso remoto si se obtienen credenciales válidas. |
-| `49663/tcp` | open | HTTP | Posible servicio web adicional ejecutándose en un puerto no estándar. Requiere enumeración independiente. |
-| `49667/tcp` | open | MSRPC | Puerto RPC dinámico de Windows. Puede proporcionar información adicional sobre servicios del sistema. |
+|`80/tcp` | open | HTTP | Servidor Web. |
+|`135/tcp` | open | MSRPC | Servicio RPC de Windows. Permite identificar componentes y servicios asociados al sistema. |
+|`139/tcp` | open | NetBIOS-SSN | Asociado a SMB sobre NetBIOS. Permite enumeración de recursos compartidos. |
+|`445/tcp` | open | Microsoft-DS / SMB | Servicio SMB. Prioridad alta para enumerar shares, usuarios y posibles configuraciones inseguras. |
+|`3389/tcp` | open | RDP | Escritorio remoto de Windows. Puede ser utilizado para acceso remoto si se obtienen credenciales válidas. |
+|`49663/tcp` | open | HTTP | Posible servicio web adicional ejecutándose en un puerto no estándar. Requiere enumeración independiente. |
+|`49667/tcp` | open | MSRPC | Puerto RPC dinámico de Windows. Puede proporcionar información adicional sobre servicios del sistema. |
 
 ### Análisis
 
