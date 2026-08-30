@@ -5,7 +5,7 @@ Fecha: 29/08/2026
 Autor: Joseph González 
 ---
 
-Mi objetivo es documentar de forma clara y reproducible el proceso de enumeración, explotación, movimiento lateral y escalada de privilegios, mostrando los comandos utilizados y el razonamiento detrás de cada paso.
+El objetivo de este repositorio es documentar de forma clara y reproducible el proceso de enumeración, explotación, movimiento lateral y escalada de privilegios, mostrando los comandos utilizados y el razonamiento detrás de cada paso, asimismo brindar las pautas necesarias para mitigar las mismas vulnerabilidades. 
 
 ## Cadena de Ataque
 ```
