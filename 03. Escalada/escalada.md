@@ -8,4 +8,10 @@ whoami
 whoami /priv
 whoami /groups
 ```
+## Enumeracion del usuario
+
+```cmd
+systeminfo
+hostname
+```
 
