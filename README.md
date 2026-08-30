@@ -1,2 +1,37 @@
-# THM-Relevant-Enumeracion-Explotacion-Escalada
-Write-up técnico enfocado en el compromiso de un sistema Windows a través de la enumeración de servicios, el abuso de SMB, la ejecución de código mediante IIS y la escalada de privilegios aprovechando SeImpersonatePrivilege.
+# Relevant 
+
+Fecha: 29/08/2026
+Autor: Joseph González 
+
+Mi objetivo es documentar de forma clara y reproducible el proceso de enumeración, explotación, movimiento lateral y escalada de privilegios, mostrando los comandos utilizados y el razonamiento detrás de cada paso.
+
+## Cadena de Ataque
+```
+Reconocimiento
+     ↓
+Enumeración de puertos y servicios
+     ↓
+SMB
+     ↓
+Enumeración de recursos compartidos
+     ↓
+Acceso a SMB con credenciales encontradas
+     ↓
+Obtención de archivos / información sensible
+     ↓
+Identificación del servicio vulnerable
+     ↓
+Explotación
+     ↓
+Shell como usuario de servicio
+     ↓
+Enumeración local
+     ↓
+Identificación de privilegios/configuración vulnerable
+     ↓
+Privilege Escalation
+     ↓
+NT Authority SYSTEM
+
+```
+
