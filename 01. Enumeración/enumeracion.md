@@ -32,7 +32,32 @@ nmap -p- -sC -sV -vvv 10.129.125.26
 
 ### Análisis
 
-La superficie de ataque está dominada por servicios propios de Windows, especialmente `**SMB/RPC**`, junto con servicios web y RDP.
+La superficie de ataque está dominada por servicios propios de Windows, especialmente `SMB/RPC`, junto con servicios web y RDP.
 El puerto `445/tcp` será una de las prioridades de enumeración debido a la posibilidad de encontrar recursos compartidos, archivos o información sensible.
 RDP (`3389/tcp`) representa otro posible vector de acceso remoto, aunque requiere credenciales válidas o una vulnerabilidad específica.
 La siguiente fase será enumerar cada servicio para determinar cuál proporciona el primer punto de entrada.
+
+## Enumeración de SMB
+
+Ya identificado el servicio, procedemos a listar los recursos compartidos que tiene el servidor alojado. 
+Vamos a utilizar `SMBCLIENT` para nuestra enumeración.
+
+El comando es el siguiente: 
+
+```smbclient -L \\\\10.129.125.26\\```
+
+Resultado:
+
+| Recurso | Acceso | Observación |
+|---|---|---|
+| `ADMIN$` | Denegado | Recurso administrativo de Windows. |
+| `C$` | Denegado | Recurso administrativo del sistema. |
+| `IPC$` | Accesible | Recurso utilizado para comunicación entre procesos. |
+| `nt4wrksv` | **Accesible** | Recurso compartido con acceso anónimo. |
+
+`
+En pentesting utilizamos otra forma para listar recursos compartidos en entornos Windows con la herramienta `nxc` pero realmente no lo veo necesario para este CTF.
+`
+
+El recurso **`nt4wrksv`** resulta especialmente interesante debido a que permite acceso sin proporcionar credenciales.
+
