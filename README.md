@@ -7,6 +7,18 @@ Autor: Joseph González
 
 El objetivo de este repositorio es documentar de forma clara y reproducible el proceso de enumeración, explotación, movimiento lateral y escalada de privilegios, mostrando los comandos utilizados y el razonamiento detrás de cada paso. Asimismo, se proporcionan las pautas necesarias para mitigar las vulnerabilidades identificadas durante el proceso.
 
+
+## Información de la máquina
+
+---
+| Campo | Información |
+|---|---|
+| Plataforma | TryHackMe |
+| OS | Windows |
+| Dificultad | Media |
+| Tipo | CTF |
+---
+
 ## Cadena de Ataque
 ```
 Reconocimiento
