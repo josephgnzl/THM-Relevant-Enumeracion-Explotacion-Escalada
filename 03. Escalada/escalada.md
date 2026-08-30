@@ -70,6 +70,5 @@ C:\Windows\system32> whoami
 nt authority\system
 ```
 
-
-
+Esto confirma que tenemos acceso privilegiado, permitiéndonos ejecutar acciones con los permisos de NT AUTHORITY\SYSTEM sobre el sistema comprometido.
 
