@@ -55,9 +55,7 @@ Resultado:
 | `IPC$` | Accesible | Recurso utilizado para comunicación entre procesos. |
 | `nt4wrksv` | **Accesible** | Recurso compartido con acceso anónimo. |
 
-`
-En pentesting utilizamos otra forma para listar recursos compartidos en entornos Windows con la herramienta `nxc` pero realmente no lo veo necesario para este CTF.
-`
+En pentesting también podemos utilizar nxc para enumerar recursos compartidos en entornos Windows. Sin embargo, para este CTF no resulta necesario, ya que smbclient nos proporciona la información necesaria.
 
 El recurso **`nt4wrksv`** resulta especialmente interesante debido a que permite acceso sin proporcionar credenciales.
 
