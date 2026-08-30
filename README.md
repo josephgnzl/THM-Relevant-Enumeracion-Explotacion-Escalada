@@ -17,34 +17,32 @@ El objetivo de este repositorio es documentar de forma clara y reproducible el p
 | Tipo | CTF |
 ---
 ## Cadena de Ataque
+```
+Reconocimiento
+     ↓
+Enumeración de puertos y servicios
+     ↓
+    SMB
+     ↓
+Enumeración de recursos compartidos
+     ↓
+Acceso a SMB con credenciales encontradas
+     ↓
+Obtención de archivos / información sensible
+     ↓
+Identificación del servicio vulnerable
+     ↓
+Explotación
+     ↓
+Shell como usuario de servicio
+     ↓
+Enumeración local
+     ↓
+Identificación de privilegios/configuración vulnerable
+     ↓
+Privilege Escalation
+     ↓
+NT AUTHORITY\SYSTEM
+```
 
-<div align="center">
-
-Reconocimiento  
-↓  
-Enumeración de puertos y servicios  
-↓  
-SMB  
-↓  
-Enumeración de recursos compartidos  
-↓  
-Acceso a SMB con credenciales encontradas  
-↓  
-Obtención de archivos / información sensible  
-↓  
-Identificación del servicio vulnerable  
-↓  
-Explotación  
-↓  
-Shell como usuario de servicio  
-↓  
-Enumeración local  
-↓  
-Identificación de privilegios/configuración vulnerable  
-↓  
-Privilege Escalation  
-↓  
-**NT AUTHORITY\SYSTEM**
-
-</div>
 
