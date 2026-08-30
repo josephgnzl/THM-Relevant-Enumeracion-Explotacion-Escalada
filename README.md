@@ -9,15 +9,13 @@ El objetivo de este repositorio es documentar de forma clara y reproducible el p
 
 
 ## Información de la máquina
-
 ---
-|---|---|
 | Plataforma | TryHackMe |
+|---|---|
 | OS | Windows |
 | Dificultad | Media |
 | Tipo | CTF |
 ---
-
 ## Cadena de Ataque
 ```
 Reconocimiento
