@@ -55,14 +55,19 @@ C:\Windows\Temp>ps.exe -i -c cmd.exe
 Microsoft Windows [Version 10.0.14393]
 (c) 2016 Microsoft Corporation. All rights reserved.
 
-C:\Windows\system32
+C:\Windows\system32>
 ```
 
 Verificación de escalada:
 
 ```cmd
-whoami
-# nt authority\system
+C:\Windows\system32> whoami
+```
+
+## Resultado
+
+```
+nt authority\system
 ```
 
 
