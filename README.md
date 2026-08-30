@@ -40,7 +40,7 @@ Enumeración local
      ↓
 Identificación de privilegios/configuración vulnerable
      ↓
-Privilege Escalation
+Escalación de Privilegios
      ↓
 NT AUTHORITY\SYSTEM
 ```
