@@ -32,7 +32,7 @@ nmap -p- -sC -sV -vvv 10.129.125.26
 
 ### Análisis
 
-La superficie de ataque está dominada por servicios propios de Windows, especialmente **SMB/RPC**, junto con servicios web y RDP.
+La superficie de ataque está dominada por servicios propios de Windows, especialmente `**SMB/RPC**`, junto con servicios web y RDP.
 El puerto `445/tcp` será una de las prioridades de enumeración debido a la posibilidad de encontrar recursos compartidos, archivos o información sensible.
 RDP (`3389/tcp`) representa otro posible vector de acceso remoto, aunque requiere credenciales válidas o una vulnerabilidad específica.
 La siguiente fase será enumerar cada servicio para determinar cuál proporciona el primer punto de entrada.
