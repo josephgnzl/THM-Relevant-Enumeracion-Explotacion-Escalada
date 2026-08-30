@@ -48,9 +48,7 @@ Utilizamos `C:\Windows\Temp` porque es un directorio destinado al almacenamiento
 ## Ejecución de printspoofer y escalación de privilegios 
 
 ```
-****  Online  ****
-  0000  ...
-  6a00
+
 CertUtil: -URLCache command completed successfully.
 
 c:\windows\system32\inetsrv>
