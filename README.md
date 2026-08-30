@@ -17,7 +17,7 @@ El objetivo de este repositorio es documentar de forma clara y reproducible el p
 | Tipo | CTF |
 ---
 ## Cadena de Ataque
-```
+
 <div align="center">
 
 Reconocimiento  
@@ -47,5 +47,4 @@ Privilege Escalation
 **NT AUTHORITY\SYSTEM**
 
 </div>
-```
 
