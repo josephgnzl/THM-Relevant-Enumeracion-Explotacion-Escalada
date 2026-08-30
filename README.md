@@ -13,7 +13,7 @@ Reconocimiento
      ↓
 Enumeración de puertos y servicios
      ↓
-SMB
+    SMB
      ↓
 Enumeración de recursos compartidos
      ↓
