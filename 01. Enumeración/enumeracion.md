@@ -59,3 +59,18 @@ En pentesting también podemos utilizar nxc para enumerar recursos compartidos e
 
 El recurso **`nt4wrksv`** resulta especialmente interesante debido a que permite acceso sin proporcionar credenciales.
 
+```bash
+smbclient //10.129.125.26/nt4wrksv -N
+```
+Una vez dentro del recurso:
+``
+smb: \> ls
+``
+Se identifica el archivo:
+```
+passwords.txt
+```
+Procedemos a descargarlo:
+```
+smb: \> get passwords.txt
+```
