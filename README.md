@@ -11,7 +11,6 @@ El objetivo de este repositorio es documentar de forma clara y reproducible el p
 ## Información de la máquina
 
 ---
-| Campo | Información |
 |---|---|
 | Plataforma | TryHackMe |
 | OS | Windows |
